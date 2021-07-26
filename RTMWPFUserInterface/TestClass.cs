@@ -12,7 +12,21 @@ namespace RTMWPFUserInterface
 
         public double addNumebrs(double x,double y)
         {
-            return x + y;
+            try
+            {
+                return x + y;
+            }
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }
+            
+            finally
+            {
+
+            }
+
+            
         }
     }
 }
